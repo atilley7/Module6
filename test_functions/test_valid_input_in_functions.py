@@ -2,9 +2,12 @@ import unittest
 from more_functions.validate_input_in_functions import score_input
 
 
-class MyTestCase(unittest.TestCase):
-    def test_score_input_test_score_valid(self):
+class MyTestCase1(unittest.TestCase):
+    def test_score_input_test_name(self):
         self.assertEqual(score_input("pythonTest"), "pythonTest: 0")
+
+    def test_score_input_test_score_valid(self):
+        self.assertEqual(score_input("pythonTest", 60), "pythonTest: 60")
 
     def test_score_input_test_score_below_range(self):
         self.assertEqual(score_input("pythonTest", -50), 'Invalid test score, try again!')
