@@ -1,3 +1,2 @@
-
-def multiply_string():
-    pass
+def multiply_string(strOne, num):
+    return strOne * num
